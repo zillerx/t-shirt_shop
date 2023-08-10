@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин футболок</title>
+    <link rel="stylesheet" type="text/css" href="stylewp.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="rel">
+            <div class="podarok" id='present' onclick="show_modal1()">
+                <img src="images/podarok.png" width="150px" height="100px">
+                
+                <div class='dost' id="Modal_window_present">
+                    <div class="modal-content">
+                        <div class='in'>
+                            <span class="close" onclick="show_modal1()">&times;</span>
+                            <font size='4'color='white'>Информация о подарке</font>
+                        </div>
+                        <div class="in1">
+                            Вам подарок
+                        </div>
+                        <div class="in2">
+                            <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centered">
+                <div class="wow animate__animated animate__pulse">
+                    <b style="font-size:20px">ФУТБОЛКИ С ПРИНТАМИ</b><br>
+                </div>
+
+                <div class="cena">
+                    <b>
+                            <font color="red" size="6">499</font>
+                            <font color="red" size="5"><sup>руб.</sup></font>
+                        </b>
+                </div>
+
+                <div class="price centered anima">
+                    ПОЧЕМУ ТАК ДЕШЕВО?
+                </div>
+
+                <div class="kr">
+                    <div class="kr2">
+                        <img src="images/sale.png" height="70px" width="100px"><br> Низкие цены
+                    </div>
+
+                    <div class="kr2">
+                        <img src="images/gruzovik.png" height="70px" width="90px"><br> Доставки по всей России
+                    </div>
+
+                    <div class="kr2">
+                        <img src="images/hit.png" height="70px" width="70px"><br> Только хиты
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <main>
+        <button onclick="alert(test())">BUTTON</button>
+        <section class="centered">
+
+            <div class="text-top" id="text1">
+                <font size="6">ФУТБОЛКИ</font><br>
+                <font size="3">100% хлопок</font>
+            </div><br>
+
+            <div class="allll">
+                <div class="strelka">
+                    <img src="images/left.PNG" width="50px" onclick="rand_tshirt()">
+                </div>
+                <div class="bo">
+                    <div class="tshirt_1"></div>
+                        <img src="images/photo.png" height="350" width="350" style="border: 1px solid black"><br>
+                    </div>
+                    <font size="4"><b>Футболка</b></font><br>
+                    <font color="red" size="4"><b>499 P</b></font><br>
+                    <button class="btn" onmouseover="change_style1()" onmouseleave="change_style1()" onclick="alert(show_modal())" id="button1">ДОБАВИТЬ В ЗАКАЗ</button>
+                    <div class='dost' id="Modal_window">
+                        <div class="modal-content">
+                            <div class='inf'>
+                                <span class="close" onclick="show_modal()">&times;</span>
+                                <font size='4'color='white'>Информация о доставке футболок</font>
+                            </div>
+                            <div class="inf1">
+                                Доставка круглосуточная в пределах МКАД<br>
+                                Минимальный заказ - 500р<br><br>
+                                Телефон службы доставки : 88888888 
+                            </div>
+                            <div class="inf2">
+                                <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bo">
+                    <div class="tshirt_2">
+                        <img src="images/photo_1.png" height="350" width="350" style="border: 1px solid black"><br>
+                    </div>
+                        <font size="4"><b>Футболка</b></font><br>
+                    <font color="red" size="4"><b>499 P</b></font><br>
+                    <button class="btn" onmouseover="change_style2()" onmouseleave="change_style2()" onclick="alert(show_modal())" id="button2">ДОБАВИТЬ В ЗАКАЗ</button>
+                    <div class='dost' id="Modal_window">
+                        <div class="modal-content">
+                            <div class='inf'>
+                                <span class="close" onclick="show_modal()">&times;</span>
+                                <font size='4'color='white'>Информация о доставке футболок</font>
+                            </div>
+                            <div class="inf1">
+                                Доставка круглосуточная в пределах МКАД<br>
+                                Минимальный заказ - 500р<br><br>
+                                Телефон службы доставки : 88888888 
+                            </div>
+                            <div class="inf2">
+                                <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strelka">
+                    <img src="images/right.PNG" width="50px" onclick="rand_tshirt()">
+                </div>
+                <button class="tp wow animate__animated animate__bounceOut" onclick="alert(print_contact())">
+                        <img src="images/tp.png" height="60" width="60">
+                    </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="ccr">
+                <font size="5">Как выбрать размер?</font>
+            </div>
+
+            <div class="shop centered">
+
+                <div class="t-shirt">
+                    <img src="images/photo2.png" style="border: 1px solid black"><br>
+                    <b><font size="3">Футболка</font></b><br>
+                    <b><font size="4" color="red">499 Р</font></b><br><br>
+                    <button class="btn" onmouseover="change_style3()" onmouseleave="change_style()" onclick="alert(show_modal())" id="button3">ДОБАВИТЬ В ЗАКАЗ</button>
+                    <div class='dost' id="Modal_window">
+                        <div class="modal-content">
+                            <div class='inf'>
+                                <span class="close" onclick="show_modal()">&times;</span>
+                                <font size='4'color='white'>Информация о доставке футболок</font>
+                            </div>
+                            <div class="inf1">
+                                Доставка круглосуточная в пределах МКАД<br>
+                                Минимальный заказ - 500р<br><br>
+                                Телефон службы доставки : 88888888 
+                            </div>
+                            <div class="inf2">
+                                <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="t-shirt">
+                    <img src="images/photo2.png" style="border: 1px solid black"><br>
+                    <b><font size="3">Футболка</font></b><br>
+                    <b><font size="4" color="red">499 Р</font></b><br><br>
+                    <button class="btn" onmouseover="change_style4()" onmouseleave="change_style()" onclick="alert(show_modal())" id="button4">ДОБАВИТЬ В ЗАКАЗ</button>
+                    <div class='dost' id="Modal_window">
+                        <div class="modal-content">
+                            <div class='inf'>
+                                <span class="close" onclick="show_modal()">&times;</span>
+                                <font size='4'color='white'>Информация о доставке футболок</font>
+                            </div>
+                            <div class="inf1">
+                                Доставка круглосуточная в пределах МКАД<br>
+                                Минимальный заказ - 500р<br><br>
+                                Телефон службы доставки : 88888888 
+                            </div>
+                            <div class="inf2">
+                                <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="t-shirt">
+                    <img src="images/photo2.png" style="border: 1px solid black"><br>
+                    <b><font size="3">Футболка</font></b><br>
+                    <b><font size="4" color="red">499 Р</font></b><br><br>
+                    <button class="btn" onmouseover="change_style5()" onmouseleave="change_style()" onclick="alert(show_modal())" id="button5">ДОБАВИТЬ В ЗАКАЗ</button>
+                    <div class='dost' id="Modal_window">
+                        <div class="modal-content">
+                            <div class='inf'>
+                                <span class="close" onclick="show_modal()">&times;</span>
+                                <font size='4'color='white'>Информация о доставке футболок</font>
+                            </div>
+                            <div class="inf1">
+                                Доставка круглосуточная в пределах МКАД<br>
+                                Минимальный заказ - 500р<br><br>
+                                Телефон службы доставки : 88888888 
+                            </div>
+                            <div class="inf2">
+                                <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="rozgr">
+
+                <div class="rr">
+                    <font color="white" size="7">РОЗЫГРЫШ<br>
+                        <b>10000</b>
+                        <b><sup>руб.</sup></b><br>
+                    </font>
+                    <font size="6" color="yellow">СРЕДИ ОБЛАДАТЕЛЕЙ <br>КУПОНОВ</font><br>
+                    <font color="white" size="6">Вечером 1 июня команда розыграет приз в прямом эфире на аккаунте @dfghj.ru</font>
+                </div>
+
+                <div class="money">
+                    <img src="images/money.jpg" height="240px" width="240px">
+                </div>
+            </div>
+        </section>
+
+        <section class="zakaz">
+            <div class="vz">
+                <font size="6">ВАШ ЗАКАЗ</font>
+            </div>
+
+            <div class="korz">
+                <b><font size="5">Корзина пуста</font></b>
+            </div>
+
+            <div class="pusto">
+                <font color="gray" size="4">В корзине пусто!</font>
+            </div>
+        </section>
+
+        <section class="forma">
+            <form action="/action_page.php" class="form-cont">
+
+                <label>
+                        <div class="wow animate__animated animate__bounce">
+                            <b><font size="5">Оформление заказа</font></b><br><br>
+                        </div>
+                    </label>
+
+                <label>
+                        <font size="4">
+                            <b>Имя</b><br>
+                            <input id='input_name' class="text-inp" type="text" placeholder="Имя" required><br>
+                        </font>
+                    </label>
+
+                <label>
+                        <font size="4">
+                            <b>Фамилия</b><br>
+                            <input id='input_fam' class="text-inp" type="text" placeholder="Фамилия" required><br>
+                        </font>
+                    </label>
+
+                <label>
+                        <font size="4">
+                            <b>Почта</b><br>
+                            <input id='input_mail'class="text-inp" type="text" placeholder="Введите почту" required><br>
+                        </font>
+                    </label>
+
+                <label>
+                        <font size="4">
+                            <b>Телефон</b><br>
+                            <input id='input_phone' class="text-inp" type="text" placeholder="Номер телефона" required><br>
+                        </font>
+                    </label>
+
+                <label>
+                        <font color="#32cd32" size="4">Оплата онлайн</font>
+                    </label>
+                <hr class="hrr">
+                <button>
+                        Перейти к заказу
+                </button>
+                <br>
+                <span id="sp"></span>
+            </form>
+        </section>
+        <section class="dostavka">
+            <button class="bt" onclick="show_modal()" style="margin-top: 50px;">
+                <font size="4">Условия доставки</font>
+                <div class='dost' id="Modal_window">
+                    <div class='inf'>
+                        <span class="close" onclick="show_modal()">&times;</span>
+                        <font size='4'color='white'>Информация о доставке футболок</font>
+                    </div>
+                    <div class="inf1">
+                        Доставка круглосуточная в пределах МКАД<br>
+                        Минимальный заказ - 500р<br><br>
+                        Телефон службы доставки : 88888888 
+                    </div>
+                    <div class="inf2">
+                        <font color="white" size="4">Телефон поддержки : 8 999 333 11 22</font>
+                    </div>
+                </div>
+            </button>
+        </section>
+        <section>
+            <div class="otz">
+                <img src="images/star_2.png" width="75px" id="star_f_1" onmouseenter="show_star(1)">
+                <img src="images/star_2.png" width="75px" id="star_f_2" onmouseenter="show_star(2)">
+                <img src="images/star_2.png" width="75px" id="star_f_3" onmouseenter="show_star(3)">
+                <img src="images/star_2.png" width="75px" id="star_f_4" onmouseenter="show_star(4)">
+                <img src="images/star_2.png" width="75px" id="star_f_5" onmouseenter="show_star(5)">
+            </div>
+
+            <div>
+                <center>
+                    <font size='4'>Оставьте оценку сайту</font>
+                </center>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
