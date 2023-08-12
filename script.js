@@ -237,9 +237,13 @@ function valid_form() {
         document.getElementById("sp").innerHTML = "Вы не ввели почту"
     }
 }
+function random(arr) {
+    var rand = Math.floor(Math.random() * arr.length);
+    return arr[rand];
+}
 function rand_tshirt() {
-    var arr = ["images/photo.png", "images/photo_1.png", "images/f3.jpg", "images/f4.avif", "images/f5.jpg", "images/f6.jpg"]
-    var id_img = ["ts_1", "ts_2","ts_3", "ts_4", "ts_5", "ts_6"]
+    var arr = ["imges/photo.png", "images/photo_1.png"]
+    var id_img = ["ts_1", "ts_2"]
 
     for (let i = 0; i<id_img.length; i++) {
         c = document.getElementById(id_img[i]);
